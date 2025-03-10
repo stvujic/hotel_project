@@ -31,6 +31,7 @@ $room = $result->fetch_assoc(); //uzima prvi rezultat koji je dobio i pretvara g
         <h1><?= $room['room_type'] ?></h1>
         <p>Room number:<?= $room['number'] ?></p>
 
+        <p>Book this room:</p>
         <form action="model/add_guest.php" method="post">
         <input type="text" name="name" placeholder="Enter guest name">
         <input type="text" name="surname" placeholder="Enter guest surname">
