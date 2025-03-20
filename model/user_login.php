@@ -13,7 +13,7 @@ if(!isset($_POST['password']) || empty($_POST['password']))
 require_once "database.php";
 
 $email = $database-> real_escape_string($_POST['email']);
-$password = $_POST['password'];
+$password = $database->real_escape_string($_POST['password']);
 
 $result = $database -> query("SELECT * FROM users WHERE email = '$email'");
 
