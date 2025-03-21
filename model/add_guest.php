@@ -1,9 +1,8 @@
 <?php
 
 require_once "functions.php";
-require_once "database.php"; // Učitavamo konekciju ka bazi podataka
+require_once "database.php";
 
-// Provera da li su podaci uneti u formu
 if (!isset($_POST['name']) || empty($_POST['name'])) {
     die("You need to enter guest name!");
 }
@@ -20,10 +19,9 @@ if (!isset($_POST['check_out']) || empty($_POST['check_out'])) {
     die("You need to enter check-out date!");
 }
 
-// Eskejpovanje podataka kako bi se sprečio SQL injection
 $name = mysqli_real_escape_string($database, $_POST['name']);
 $surname = mysqli_real_escape_string($database, $_POST['surname']);
-$number = mysqli_real_escape_string($database, $_POST['number']); // Ostavljamo kao string
+$number = mysqli_real_escape_string($database, $_POST['number']);
 $check_in = mysqli_real_escape_string($database, $_POST['check_in']);
 $check_out = mysqli_real_escape_string($database, $_POST['check_out']);
 

@@ -1,0 +1,14 @@
+[D]
+Generalno dosta dobro si odradio, mislim da bi mogao malo da napravis funkcije za neke stvari, 
+recimo imas ovde insert into guests u add_guest.php, to bi mogao napraviti funkciju addGuest naprimer, 
+uvek tako gledas neki kod da smestis medju funkcije da bi posle koristiti na vise mesta. 
+
+[ISTRAZI ZA KOJE JOS]
+Isto vazi i za ostalo.
+
+[D]
+Recimo isto u search_room, imas tamo if/else koji proverava da li ima soba ili nema, 
+mozda da uradis proveru da li nema i onda na osnovnu toga uradis die() sa greskom i samo nastavis ispod toga redovno.
+
+[D]
+Gledaj da celokupan kod uvek ali uvek escapujes, ne bitno koji je query u pitanju
